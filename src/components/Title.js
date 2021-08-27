@@ -1,5 +1,5 @@
 import React from 'react'
-import { linkIcons } from "../context/linkIcons";
+import { linkIcons } from "../context/linkIconsData";
 import styled from "styled-components"
 
 
@@ -14,7 +14,7 @@ function Title({ greeting, intro, jobTitle }) {
                     <p2>{intro}</p2>
                     <p3>{jobTitle}</p3>
                 </div>
-                <div className="icons">
+                {/*<div className="icons">
                     {linkIcons.map(linkIcon => {
                         <a key={linkIcon.id} href={linkIcon.url}>
                             {linkIcon.icon}
@@ -22,7 +22,7 @@ function Title({ greeting, intro, jobTitle }) {
                     </a>
                     }
                     )}
-                </div>
+                </div>*/}
             </div>
         </TitleWrapper>
     )

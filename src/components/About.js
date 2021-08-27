@@ -24,12 +24,13 @@ export default About
 const AboutWrapper = styled.div` 
 width: 100%;
 margin: auto;
+background:var(--lightGrey);
 
 .aboutPage{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--mainWhite);
+    background-color: var(--oceanGreenLite);
 }
 .aboutInfo{
 width: 35vw;
@@ -37,11 +38,11 @@ margin-right: 6rem;
 margin-top: 6rem;
 }
 .aboutImg{
-
+border-radius: 9px;
     >img{
    margin-top: 6rem;
   height:65vh;
-  width: 32vw;
+  width: 35vw;
 
     }
 }

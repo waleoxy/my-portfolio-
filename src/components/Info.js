@@ -33,15 +33,20 @@ text-align: justify;
 font-size: 18px;
 }
 .info button{
-font-size: 28px;
+background-color: transparent;
+box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+font-size: 22px;
 background-color: var();
 padding: 6px;
 margin: 6px;
+border-radius: 10px;
 }
 .info button:hover{
-font-size: 28px;
-background-color: var(--lightGreyAbout);
-color: var(--peimaryColor);
+    background-color: transparent;
+    box-shadow: 7px 10px 5px 0 rgba(0, 0, 0, 0.3);
+    color: darkgray;
+    font-weight: bolder;
+    color: var(--peimaryColor);
 
 }
 

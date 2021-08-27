@@ -6,24 +6,25 @@ import { items } from "./context/myProjectList";
 function WorkPage() {
     return (
         <WorkPageWrapper>
-            <div>
-                <h1>My Projects</h1>
+            <div className="container">
+                <div className="projectspage_title">
+                    <h1>My Projects</h1>
+                </div>
+                <div className="row py-5">
+                    {items.map(item => (
+                        <Work
+                            key={item.id}
+                            image={item.image}
+                            title={item.title}
+                            projectUrl={item.projectUrl}
+                        />
+                    )
+                    )}
+                </div>
+
+
+
             </div>
-            {console.log("items", items)}
-            <div className="project__list">
-                {items.map(item => (
-
-                    <Work
-                        key={item.id}
-                        image={item.image}
-                        title={item.title}
-                        projectUrl={item.projectUrl}
-                    />
-                )
-                )}
-            </div>
-
-
 
         </WorkPageWrapper>
     )
@@ -32,15 +33,13 @@ function WorkPage() {
 export default WorkPage
 
 const WorkPageWrapper = styled.div` 
-display: flex;
-flex-direction: column;
-align-items: center;
-
-.project__list{
-display: grid;
-grid-template-columns: auto auto auto;
-grid-column-gap: 35px;
-
+background: var(--lightGrey);;
+.projectspage_title{
+    margin-top: 50px;
+    font-size: 26px;
+    font-family: "Open sans";
+    text-align: center;
 }
+
 
 `

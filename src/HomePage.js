@@ -5,6 +5,8 @@ import Title from './components/Title';
 import About from './components/About';
 import SkillsSetPage from './SkillsSetPage';
 import WorkPage from './WorkPage';
+import ToolsPage from './ToolsPage';
+import Contact from './components/Contact';
 
 
 
@@ -33,6 +35,8 @@ function HomePage() {
             <About />
             <WorkPage />
             <SkillsSetPage />
+            <ToolsPage />
+            <Contact />
 
 
         </>

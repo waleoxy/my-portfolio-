@@ -1,19 +1,21 @@
-import React from 'react';
-import Skill from './components/Skill';
-import { skills } from "./context/skillsSetData";
-import styled from "styled-components"
+import React from 'react'
+import styled from "styled-components";
+import Tool from './components/Tool';
+import { tools } from "./context/toolsData";
 
-function SkillsSetPage() {
+function ToolsPage() {
+    console.log("tools", tools)
     return (
-        <SkillsSetPageWrapper>
+        <ToolsPageWrapper>
             <div className="workspage-title">
-                <h1>My Skills Set</h1>
+                <h1>Tools Set</h1>
             </div>
             <div className="work-card row">
-                {skills.map(item => (
-                    <div className="col-10 mx auto col-sm-6 col-md-4
+
+                {tools.map(item => (
+                    <div className="col-10 mx-auto col-sm-6 col-md-2 
                     text-center flex justify-center my-3">
-                        <Skill
+                        <Tool
                             key={item.id}
                             icon={item.icon}
                             title={item.title}
@@ -23,15 +25,16 @@ function SkillsSetPage() {
                 ))}
             </div>
 
-        </SkillsSetPageWrapper>
+        </ToolsPageWrapper>
     )
 }
 
-export default SkillsSetPage
+export default ToolsPage
 
-const SkillsSetPageWrapper = styled.div`
-background: var(--lightGrey);
+
+const ToolsPageWrapper = styled.div`
 .work-card{
+    background: var(--mainWhite);
     justify-content: center;
 }
 .workspage-title{

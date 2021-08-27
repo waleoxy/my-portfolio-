@@ -2,32 +2,33 @@ export const items = [
     {
         id: 1,
         title: "Amazon clone",
-        image: "img/amazonImg.png",
-        projectUrl: ""
+        image: "img/amazonImg.jpg",
+        projectUrl: "https://amazonclone-react.netlify.app"
     },
     {
         id: 2,
         title: "Ovation Event eCommerce app",
-        image: "img/ovationImg.png",
-        projectUrl: ""
+        image: "img/ovationImg.jpg",
+        projectUrl: "https://ovationevents.netlify.app"
     },
 
     {
         id: 3,
         title: "Instagram clone",
-        image: "img/instagramImg.png"
+        image: "img/instagramImg.png",
+        projectUrl: "https://instagram-clone-89e12.web.app/"
     },
 
     {
         id: 4,
-        title: "My Website",
-        image: "img/myFamily.jpg",
-        projectUrl: ""
+        title: "Airbnb clone",
+        image: "img/airbnbImg.jpg",
+        projectUrl: "https://airbnb-clone-nextjs-six.vercel.app/"
     },
     {
         id: 5,
-        title: "Instagram clone",
-        image: "img/product-4.png",
+        title: "My Personal Website",
+        image: "img/myFamily.jpg",
         projectUrl: ""
     },
     {

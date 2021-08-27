@@ -3,10 +3,12 @@
 
 :root{
 --primaryColor:#59328b;
---primaryRGBA:rgba(0,0,0,0.3);
+--primaryRGBA:rgba(184, 66, 66, 0.3);
 --oceanGreen:#bffec7;
+--oceanGreenLite:#f7fbf7;
 --lightGrey:#faf4f4ee;
 --lightGreyAbout:#d6ecc1ee;
+--lightBrown:#f4f5cfee;
 --mainWhite:#fff;
 --mainBlack:#222;
 --mainTransition: all, 0.3s ease-in-out;
