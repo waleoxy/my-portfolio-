@@ -29,6 +29,7 @@ position: -webkit-sticky;
 position: sticky;
 background-color: var(--lightGrey);
 margin-top: 0px;
+margin-bottom: 20px;
 z-index: 1;
 top: 0;
 height: 60px;
