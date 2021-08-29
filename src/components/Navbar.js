@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { linkData } from "../context/LinkData"
 
 function Navbar() {
@@ -10,7 +10,7 @@ function Navbar() {
                 <ul className="navbar__links">
                     {linkData.map((link) =>
                         (<li key={link.id} className="navbar__link">
-                            <Link to={link.path} >
+                            <Link smooth to={link.path} >
                                 {link.text}
                             </Link>
 
@@ -28,7 +28,7 @@ const NavbarWrapper = styled.nav`
 position: -webkit-sticky;
 position: sticky;
 background-color: var(--lightGrey);
-margin-top: 0;
+margin-top: 0px;
 z-index: 1;
 top: 0;
 height: 60px;

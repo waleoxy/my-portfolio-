@@ -6,7 +6,7 @@ import styled from "styled-components"
 function SkillsSetPage() {
     return (
         <SkillsSetPageWrapper>
-            <div className="workspage-title">
+            <div className="workspage-title" id="skills">
                 <h1>My Skills Set</h1>
             </div>
             <div className="work-card row">
@@ -30,6 +30,7 @@ function SkillsSetPage() {
 export default SkillsSetPage
 
 const SkillsSetPageWrapper = styled.div`
+
 background: var(--lightGrey);
 .work-card{
     justify-content: center;

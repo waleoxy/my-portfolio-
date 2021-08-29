@@ -7,7 +7,7 @@ import portHomeBcg from "../images/portHomeBcg.jpg";
 function About() {
     return (
         <AboutWrapper>
-            <div className="aboutPage">
+            <div className="aboutPage" id="about">
                 <div className="aboutImg">
                     <img src={portHomeBcg} />
                 </div>
@@ -22,10 +22,9 @@ function About() {
 export default About
 
 const AboutWrapper = styled.div` 
-width: 100%;
-margin: auto;
 background:var(--lightGrey);
-
+width: 100%;
+height: 100vh;
 .aboutPage{
     display: flex;
     align-items: center;

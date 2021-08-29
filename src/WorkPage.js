@@ -6,8 +6,8 @@ import { items } from "./context/myProjectList";
 function WorkPage() {
     return (
         <WorkPageWrapper>
-            <div className="container">
-                <div className="projectspage_title">
+            <div className="container" id="works">
+                <div className="projectspage_title" >
                     <h1>My Projects</h1>
                 </div>
                 <div className="row py-5">
@@ -33,12 +33,12 @@ function WorkPage() {
 export default WorkPage
 
 const WorkPageWrapper = styled.div` 
-background: var(--lightGrey);;
+background: var(--lightGrey);
 .projectspage_title{
-    margin-top: 50px;
     font-size: 26px;
     font-family: "Open sans";
     text-align: center;
+
 }
 
 

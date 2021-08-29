@@ -4,14 +4,13 @@ import Tool from './components/Tool';
 import { tools } from "./context/toolsData";
 
 function ToolsPage() {
-    console.log("tools", tools)
     return (
-        <ToolsPageWrapper>
-            <div className="workspage-title">
-                <h1>Tools Set</h1>
-            </div>
-            <div className="work-card row">
+        <ToolsPageWrapper >
 
+            <div className="work-card row" id="tools">
+                <div className="workspage-title" >
+                    <h1>Tools Set</h1>
+                </div>
                 {tools.map(item => (
                     <div className="col-10 mx-auto col-sm-6 col-md-2 
                     text-center flex justify-center my-3">
@@ -33,6 +32,9 @@ export default ToolsPage
 
 
 const ToolsPageWrapper = styled.div`
+width: 100%;
+height: 65vh;
+margin-top: 50px;
 .work-card{
     background: var(--mainWhite);
     justify-content: center;

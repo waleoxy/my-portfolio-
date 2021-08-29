@@ -18,21 +18,21 @@ export const linkIcons = [
     },
     {
         id: 3,
+        icon: < MdEmail className="icon" />,
+        text: "waleoxy@gmail.com",
+        url: ""
+    },
+    {
+        id: 4,
         icon: <FaGithub className="icon" />,
         text: "www.github.com/waleoxy",
         url: "https://www.github.com/waleoxy"
     },
     {
-        id: 4,
+        id: 5,
         icon: <FaLinkedin className="icon" />,
         text: "www.linkedin.com/in/olawale-otubu-a090008a",
         url: "https://www.linkedin.com/in/olawale-otubu-a090008a"
-    },
-    {
-        id: 5,
-        icon: < MdEmail className="icon" />,
-        text: "waleoxy@gmail.com",
-        url: ""
     },
     {
         id: 6,

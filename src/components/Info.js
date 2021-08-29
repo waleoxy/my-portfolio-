@@ -8,13 +8,8 @@ function Info() {
                 <div className="info__title">
                     <h1>About Me</h1>
                     <p>
-                        I am Jhone Deo Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum has been the industry's
-                        standard dummy text ever It has survived not only five centuries,
-                        but also the leap into electronic but also the leap into electronic typesetting,
-                        remaining essentially unchanged. It was popularised in the 1960s with
-                        the release of Letraset sheets containing
-               </p>
+                        Highly motivated, self-starting developer ever committed to continuous and never ending personal improvements. Designing and developing apps for business solutions, educational tutorial app, websites…Looking forward to rubbing minds with like great minds by working on a large scale in a corporate environment.
+                    </p>
                 </div>
                 <button>My Resume</button>
                 <button>Contact Me</button>
