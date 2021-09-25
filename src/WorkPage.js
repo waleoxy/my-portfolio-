@@ -6,7 +6,7 @@ import { items } from "./context/myProjectList";
 function WorkPage() {
     return (
         <WorkPageWrapper>
-            <div className="container" id="works">
+            <div className="container py-5" id="works">
                 <div className="projectspage_title" >
                     <h1>My Projects</h1>
                 </div>

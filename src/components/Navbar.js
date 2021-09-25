@@ -7,6 +7,7 @@ function Navbar() {
     return (
         <NavbarWrapper>
             <div className="navbar">
+
                 <ul className="navbar__links">
                     {linkData.map((link) =>
                         (<li key={link.id} className="navbar__link">
@@ -53,6 +54,13 @@ align-items: center;
    text-transform: capitalize;
  
 }
+@media (max-width:925px){ 
+    .navbar__links{
+        visibility: hidden;
+        
+    }
+}
+
 
 
 `

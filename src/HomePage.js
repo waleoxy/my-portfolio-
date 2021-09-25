@@ -22,7 +22,7 @@ function HomePage() {
         <>
 
             <Hero max="true">
-                <div className="intro">
+                <div className="intro ">
                     <span>
                         <Title
                             greeting={greetings}
@@ -37,7 +37,6 @@ function HomePage() {
             <SkillsSetPage />
             <ToolsPage />
             <Contact />
-
 
         </>
     )

@@ -7,8 +7,8 @@ function ToolsPage() {
     return (
         <ToolsPageWrapper >
 
-            <div className="work-card row" id="tools">
-                <div className="workspage-title" >
+            <div className="work-card row pt-5 my-5" id="tools">
+                <div className="pt-5 my-3 workspage-title" >
                     <h1>Tools Set</h1>
                 </div>
                 {tools.map(item => (

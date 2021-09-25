@@ -6,7 +6,7 @@ import styled from "styled-components"
 function SkillsSetPage() {
     return (
         <SkillsSetPageWrapper>
-            <div className="workspage-title" id="skills">
+            <div className="workspage-title my-5 py-5" id="skills">
                 <h1>My Skills Set</h1>
             </div>
             <div className="work-card row">

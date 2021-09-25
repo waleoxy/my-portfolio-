@@ -33,9 +33,15 @@ export const items = [
     },
     {
         id: 6,
-        title: "samsung galaxy A8 - black",
-        image: "img/product-5.png",
-        projectUrl: ""
+        title: "covid tacker",
+        image: "img/covidtracker.png",
+        projectUrl: "https://covidtrackerwebapp.netlify.app/"
+    },
+    {
+        id: 7,
+        title: "Netflix",
+        image: "img/netflix.jpg",
+        projectUrl: "https://netflix-clone-org.vercel.app/"
     }
 
 ];

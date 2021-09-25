@@ -3,10 +3,10 @@ import ContactInfo from './ContactInfo';
 
 export default function Contact() {
     return (
-        <section className="py-5" id="contact">
-            <h1 className="text-center">My Details</h1>
+        <section className="pt-5 mt-5" id="contact">
+            <h1 className="text-center pt-5 mt-5">My Details</h1>
             <div className="row">
-                <div className="col-8 mx-auto col-md-4 my-3">
+                <div className="col-8 mx-auto col-md-4 mt-3">
                     <ContactInfo />
                 </div>
                 <div className="col-8 mx-auto col-md-4 my-3">

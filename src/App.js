@@ -14,7 +14,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <>
+    < >
       <Navbar />
       <Switch>
         <Route path="/" exact component={HomePage} />
