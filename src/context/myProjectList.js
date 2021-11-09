@@ -42,6 +42,12 @@ export const items = [
         title: "Netflix",
         image: "img/netflix.jpg",
         projectUrl: "https://netflix-clone-org.vercel.app/"
+    },
+    {
+        id: 8,
+        title: "Facebook",
+        image: "img/facebook.jpg",
+        projectUrl: "https://facebook2-0-clone.vercel.app/"
     }
 
 ];
