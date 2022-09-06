@@ -37,6 +37,7 @@ const TitleWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 65px;
     height: 100%;
     width: 100%;
   }
