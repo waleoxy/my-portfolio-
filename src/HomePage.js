@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 
 function HomePage() {
   const [greetings, setGreetings] = useState("Hello! My name is");
-  const [intro, setIntro] = useState("Olawale Otubu");
+  const [intro, setIntro] = useState("Olawale Otubu.");
   const [jobTitle, setJobTitle] = useState("I'm a fullstack web developer");
 
   return (
