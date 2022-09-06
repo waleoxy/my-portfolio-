@@ -53,7 +53,7 @@ const TitleWrapper = styled.div`
     line-height: 96px;
     padding-right: 96px;
     width: max-content;
-    animation-duration: 8s;
+    animation-duration: 9s;
     animation-name: fadein;
 
     /* transition: var(--mainTransition); */
@@ -77,6 +77,10 @@ const TitleWrapper = styled.div`
     }
 
     30% {
+      opacity: 0.3;
+      width: 100%;
+    }
+    60% {
       opacity: 0.6;
       width: 100%;
     }
