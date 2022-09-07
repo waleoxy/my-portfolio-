@@ -31,25 +31,25 @@ const TitleWrapper = styled.div`
   height: 100%;
   align-items: center;
   justify-content: center;
-  padding-left: 220px;
-  padding-top: 98px;
+  padding-left: 200px;
+  padding-top: 70px;
   .title {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 65px;
+    padding: 50px;
     height: 100%;
     width: 100%;
   }
   .title p2 {
     font-weight: 600;
-    font-size: 68px;
+    font-size: 64px;
     font-family: "open Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   }
   .title p1 {
     font-weight: 600;
     color: #02ff6a;
-    font-size: 110px;
+    font-size: 106px;
     font-family: "open Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
     line-height: 96px;
     padding-right: 96px;
@@ -94,8 +94,8 @@ const TitleWrapper = styled.div`
   .title p3 {
     font-weight: 600;
     margin-top: 15px;
-    font-size: 60px;
-    padding-right: 55px;
+    font-size: 56px;
+    padding-right: 98px;
     font-family: "open Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
     animation-duration: 5s;
     animation-name: slidein;

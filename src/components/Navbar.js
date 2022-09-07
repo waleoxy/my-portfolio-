@@ -62,16 +62,18 @@ const NavbarWrapper = styled.nav`
     margin-right: 2rem;
     margin-top: 20px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
   }
   .link {
     text-decoration: none;
     color: gray;
+    transition: "all 0.02s ease-out ";
+    word-spacing: 2px;
   }
   .link:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: green;
   }
 
