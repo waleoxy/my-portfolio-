@@ -1,23 +1,44 @@
 import React from "react";
-import { linkIcons } from "../context/linkIconsData";
 import styled from "styled-components";
+import { motion } from "framer-motion";
+
+const pVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+      ease: "easeIn",
+    },
+  },
+};
 
 function Title({ greeting, intro, jobTitle }) {
   return (
     <TitleWrapper>
       <div className="container__title">
         <div className="title">
-          <p2>{greeting}</p2>
-          <p1>{intro}</p1>
-          <p3>{jobTitle}</p3>
+          <motion.p2 variants={pVariants} initial="hidden" animate="visible">
+            {greeting}
+          </motion.p2>
+          <motion.p1 variants={pVariants} initial="hidden" animate="visible">
+            {intro}
+          </motion.p1>
+          <motion.p3
+            initial={{ x: "100vw" }}
+            animate={{
+              x: 0,
+              transition: {
+                delay: 2.5,
+                duration: 3,
+                type: "spring",
+              },
+            }}>
+            {jobTitle}
+          </motion.p3>
         </div>
-        {/* <div className="icons">
-          {linkIcons.map((linkIcon) => (
-            <a key={linkIcon.id} href={linkIcon.url}>
-              {linkIcon.icon}
-            </a>
-          ))}
-        </div> */}
       </div>
     </TitleWrapper>
   );
@@ -47,8 +68,8 @@ const TitleWrapper = styled.div`
     font-family: "open Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   }
   .title p1 {
-    font-weight: 600;
-    color: #02ff6a;
+    font-weight: 900;
+    color: #02ff6f;
     font-size: 106px;
     font-family: "open Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
     line-height: 96px;
@@ -56,11 +77,8 @@ const TitleWrapper = styled.div`
     width: max-content;
     animation-duration: 9s;
     animation-name: fadein;
-
-    /* transition: var(--mainTransition); */
-    /* transform: translateX(30px, 20px); */
   }
-
+  /* 
   @keyframes slidein {
     from {
       margin-left: 100%;
@@ -90,11 +108,11 @@ const TitleWrapper = styled.div`
       opacity: 1;
       width: 100%;
     }
-  }
+  } */
   .title p3 {
     font-weight: 600;
     margin-top: 15px;
-    font-size: 56px;
+    font-size: 52px;
     padding-right: 98px;
     font-family: "open Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
     animation-duration: 5s;

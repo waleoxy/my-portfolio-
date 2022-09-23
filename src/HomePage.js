@@ -7,6 +7,7 @@ import SkillsSetPage from "./SkillsSetPage";
 import WorkPage from "./WorkPage";
 import ToolsPage from "./ToolsPage";
 import Contact from "./components/Contact";
+import { motion } from "framer-motion";
 
 function HomePage() {
   const [greetings, setGreetings] = useState("Hello! My name is");
@@ -15,13 +16,15 @@ function HomePage() {
 
   return (
     <>
-      <Hero max="true">
+      <motion.Hero
+        max="true"
+        exit={{ y: "-100vh", transition: { ease: "easeInOut", duration: 8 } }}>
         <div className="intro ">
           <span>
             <Title greeting={greetings} intro={intro} jobTitle={jobTitle} />
           </span>
         </div>
-      </Hero>
+      </motion.Hero>
       <About />
       <WorkPage />
       <SkillsSetPage />

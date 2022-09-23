@@ -2,6 +2,19 @@ import React from "react";
 import "./About";
 import portHomeBcg from "../images/about.png";
 import { HashLink as Link } from "react-router-hash-link";
+import { motion } from "framer-motion";
+
+const imageVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+    },
+  },
+};
 
 function About() {
   return (
@@ -16,7 +29,11 @@ function About() {
             borderRadius: "12px",
             padding: "9px",
           }}>
-          <div className="w-full col-12 col-sm-10 mx-auto col-md-4 my-3 ">
+          <motion.div
+            variants={imageVariants}
+            initial="hidden"
+            animate="visible"
+            className="w-full col-12 col-sm-10 mx-auto col-md-4 my-3 ">
             <img
               src={portHomeBcg}
               className="img-fluid img-thumbnail"
@@ -32,7 +49,7 @@ function About() {
               }}
             />
             ;
-          </div>
+          </motion.div>
           <div className="col-12 w-full col-sm-10 col-md-8 mt-5 p-4">
             <h1>About Me </h1>
             <p style={{ fontSize: "20px" }}>
